@@ -50,35 +50,3 @@ h1 {
 #myName {
   text-decoration: underline;
 }
-
-#linkTime {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#linkTime span {
-  flex-grow: 1;
-  text-align: center;
-}
-
-
-#linkTime span a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: var(--colour-two);
-  color: white;
-  text-decoration: none;
-  border: none;
-  border-radius: 1px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#linkTime span a:hover {
-  background-color: var(--colour-three);
-  border-color: var(--colour-three);
-}
-
-a {
-  margin-left: 2px;
-  margin-right: 2px;
-}
