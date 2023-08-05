@@ -5,7 +5,7 @@
 }
 
 :root{
-  --colour-one: #44af69a8;
+  --colour-one: #72ce92a8;
   --colour-two: #F8333C;
   --colour-three: #FCAB10;
   --colour-four: #2B9EB3;
@@ -37,7 +37,7 @@ h1 {
 
 #bio {
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
 }
 
 #art {
