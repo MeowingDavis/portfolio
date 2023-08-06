@@ -4,9 +4,9 @@
   --colour-three: #FCAB10;
   --colour-four: #2B9EB3;
   --border-one: dashed 2px white;
+
 }
 
-
 body{
-  font-family: cursive;
+  font-family: 'IBM Plex Mono', monospace;
 }
