@@ -7,6 +7,73 @@
 
 }
 
+
+
 body{
   font-family: 'IBM Plex Mono', monospace;
+}
+
+#bio{
+  border-style: hidden;
+  margin: 10;
+  padding: 5px 5px 10px 5px;
+  background-color: antiquewhite;
+}
+
+#interactiveProjects{
+  background: #f2f2f2;
+  padding: 5px 5px 10px 5px;
+}
+
+#audioVisual{
+  background: antiquewhite;
+  padding: 5px 5px 10px 5px;
+
+}
+nav {
+  background: #f2f2f2;
+  padding: 5px 5px 10px 5px;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 2px;
+  padding: 2px;
+  
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px 5px 10px;
+  
+}
+
+nav ul li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+h1{
+  border-style: solid;
+  padding: 10px 40px 10px 10px;
+  margin: 10px;
+  
+  
+}
+
+section{
+
+  padding: 10px;
+}
+
+.project iframe {
+  max-width: 100%;
 }
