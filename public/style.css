@@ -11,6 +11,12 @@
 
 body{
   font-family: 'IBM Plex Mono', monospace;
+  /* margin-left: 10%;
+  margin-top: 1%;
+  margin-right: 10%; */
+  border-style: solid ;
+  padding: 3%;
+  background-color: #f2f2f2;
 }
 
 #bio{
@@ -23,7 +29,7 @@ body{
   border-style: hidden;
   /* margin: 10px; */
   padding: 5px 5px 10px 5px;
-  background-color: #f2f2f2;
+  background-color: antiquewhite;
 }
 
 #interactiveProjects{
@@ -36,8 +42,14 @@ body{
   padding: 5px 5px 10px 5px;
 
 }
+
+#CoverArt{
+  background: #f2f2f2;
+}
+
 nav {
   background: #f2f2f2;
+  margin: 5px;
   padding: 5px 5px 10px 5px;
   text-align: left;
 }
@@ -70,16 +82,21 @@ nav ul li a:hover {
 h1{
   border-style: solid;
   padding: 10px 40px 10px 10px;
-  margin: 10px;
+  margin: 5px;
   
   
 }
 
 section{
 
-  padding: 10px;
+  padding: 5%;
 }
 
 .project iframe {
   max-width: 100%;
+}
+
+.project-image {
+  max-width: 100%;
+
 }
