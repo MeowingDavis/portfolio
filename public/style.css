@@ -15,6 +15,8 @@ body{
   margin-top: 1%;
   margin-right: 10%; */
   border-style: none ;
+  border-width: 1%;
+  border: 10px;
   padding: 3%;
   background-color: #f2f2f2;
 }
@@ -22,14 +24,14 @@ body{
 #bio{
   border-style: hidden;
   /* margin: 10px; */
-  padding: 5px 5px 10px 5px;
+  padding: 10px;
   background-color: antiquewhite;
 }
 #about{
   border-style: hidden;
   /* margin: 10px; */
   padding: 5px 5px 10px 5px;
-  background-color: antiquewhite;
+  background-color: #f2f2f2;
 }
 
 #interactiveProjects{
@@ -38,7 +40,7 @@ body{
 }
 
 #audioVisual{
-  background: antiquewhite;
+  background: #f2f2f2;
   padding: 5px 5px 10px 5px;
 
 }
@@ -81,11 +83,16 @@ nav ul li a:hover {
 }
 
 h1{
-  border-style: solid;
+  border-style: none;
+  font-weight: bold;
+  text-decoration: underline;
   padding: 10px 40px 10px 10px;
   margin: 5px;
   
   
+}
+h2{
+  padding:10px 40px 10px 10px;
 }
 
 section{
@@ -101,3 +108,4 @@ section{
   max-width: 100%;
 
 }
+
