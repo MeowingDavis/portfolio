@@ -15,9 +15,15 @@ body{
 
 #bio{
   border-style: hidden;
-  margin: 10;
+  /* margin: 10px; */
   padding: 5px 5px 10px 5px;
   background-color: antiquewhite;
+}
+#about{
+  border-style: hidden;
+  /* margin: 10px; */
+  padding: 5px 5px 10px 5px;
+  background-color: #f2f2f2;
 }
 
 #interactiveProjects{
