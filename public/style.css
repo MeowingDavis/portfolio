@@ -26,6 +26,7 @@ body{
   /* margin: 10px; */
   padding: 10px;
   background-color: antiquewhite;
+  line-height: 32px;
 }
 #about{
   border-style: hidden;
@@ -85,9 +86,11 @@ nav ul li a:hover {
 h1{
   border-style: none;
   font-weight: bold;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   padding: 10px 40px 10px 10px;
   margin: 5px;
+  letter-spacing: -2px;
+  font-size :24pt;
   
   
 }
