@@ -107,7 +107,16 @@ section{
   
 
 }
+#CoverArt{
+ 
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start space-around;
+  
+  
 
+}
 .project iframe {
   max-width: 100%;
 }
