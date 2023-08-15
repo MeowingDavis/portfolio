@@ -1,63 +1,39 @@
-:root{
+
+:root {
   --colour-one: #72ce92a8;
   --colour-two: #F8333C;
   --colour-three: #FCAB10;
   --colour-four: #2B9EB3;
   --border-one: dashed 2px white;
-
 }
 
-
-
-body{
+body {
   font-family: 'IBM Plex Mono', monospace;
-  /* margin-left: 10%;
-  margin-top: 1%;
-  margin-right: 10%; */
-  border-style: none ;
+  margin: 1% 10%;
   border-width: 1%;
-  border: 10px;
   padding: 3%;
   background-color: #f2f2f2;
 }
 
-#bio{
-  border-style: hidden;
-  /* margin: 10px; */
+#bio {
   padding: 10px;
   background-color: antiquewhite;
   line-height: 32px;
 }
-#about{
-  border-style: hidden;
-  /* margin: 10px; */
-  padding: 5px 5px 10px 5px;
-  background-color: #f2f2f2;
-}
 
-#interactiveProjects{
+#about,
+#interactiveProjects,
+#audioVisual,
+#CoverArt {
   background: #f2f2f2;
-  padding: 5px 5px 10px 5px;
-}
-
-#audioVisual{
-  background: #f2f2f2;
-  padding: 5px 5px 10px 5px;
-
-}
-
-#CoverArt{
-  background: #f2f2f2;
-  padding: 5px 5px 10px 5px;
+  padding: 5px;
 }
 
 nav {
   background: #f2f2f2;
   margin: 5px;
-  padding: 5px 5px 10px 5px;
+  padding: 5px;
   text-align: left;
-
-  
 }
 
 nav ul {
@@ -70,14 +46,12 @@ nav ul li {
   display: inline-block;
   margin: 2px;
   padding: 2px;
-  
 }
 
 nav ul li a {
   color: #333;
   text-decoration: none;
-  padding: 5px 10px 5px 10px;
-  
+  padding: 5px 10px;
 }
 
 nav ul li a:hover {
@@ -85,46 +59,38 @@ nav ul li a:hover {
   color: #fff;
 }
 
-h1{
+h1 {
   border-style: none;
   font-weight: bold;
-  /* text-decoration: underline; */
   padding: 10px 40px 10px 10px;
   margin: 5px;
   letter-spacing: -2px;
-  font-size :24pt;
-  
-  
-}
-h2{
-  padding:10px 40px 10px 10px;
+  font-size: 24pt;
 }
 
-section{
+h2 {
+  padding: 10px 40px 10px 10px;
+}
 
+section {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
-
 }
-#CoverArt{
- 
+
+#CoverArt {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start space-around;
-  
-  
-
+  justify-content: flex-start; /* Align images from left */
+  gap: 20px; /* Add space around the images */
 }
+
 .project iframe {
   max-width: 100%;
 }
 
 .project-image {
   max-width: 100%;
-
 }
-
