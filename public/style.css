@@ -1,6 +1,5 @@
-
 :root {
-  --colour-one: #72ce92a8;
+  --colour-one: #72ce92;
   --colour-two: #F8333C;
   --colour-three: #FCAB10;
   --colour-four: #2B9EB3;
@@ -14,11 +13,12 @@ body {
   padding: 3%;
   background-color: #f2f2f2;
 }
+
 #Mee {
   display: flex;
-  justify-content: left;
-  
+  justify-content: flex-start;
 }
+
 #profilePic {
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
@@ -26,9 +26,8 @@ body {
 }
 
 #profilePic:hover {
-  transform: rotate(360deg);
+  transform: rotate(180deg);
 }
-
 
 #bio {
   padding: 10px;
@@ -37,7 +36,6 @@ body {
   background-color: antiquewhite;
   line-height: 32px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  
 }
 
 #about,
@@ -45,7 +43,7 @@ body {
 #audioVisual,
 #CoverArt {
   background: #f2f2f2;
-  padding: 5px;
+  padding: 15px;
 }
 
 nav {
@@ -85,6 +83,7 @@ h1 {
   margin: 5px;
   letter-spacing: -2px;
   font-size: 24pt;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);
 }
 
 h2 {
@@ -96,14 +95,22 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding-left: 30px;
 }
 
 #CoverArt {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align images from left */
-  gap: 20px; /* Add space around the images */
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+#audioVisual {
+  display: flex;
+  justify-content: space-around;
 }
 
 .project iframe {
@@ -113,6 +120,7 @@ section {
 .project-image {
   max-width: 100%;
 }
+
 #myName {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
