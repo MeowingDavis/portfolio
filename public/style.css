@@ -16,14 +16,18 @@ body {
 
 #Mee {
   display: flex;
-  justify-content: flex-start;
+  align-items: center; /* Vertically center content */
 }
 
 #profilePic {
+  width: 8vw; /* Set width relative to viewport width */
+  height: 8vw; /* Set height relative to viewport width */
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   transition: transform 0.5s;
+  object-fit: cover; /* Maintain aspect ratio */
 }
+
 
 #profilePic:hover {
   transform: rotate(180deg);
