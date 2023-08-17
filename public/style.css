@@ -8,7 +8,7 @@
 
 body {
   font-family: 'IBM Plex Mono', monospace;
-  margin: 1% 10%;
+  /* margin: 1% 10%; */
   border-width: 1%;
   padding: 3%;
   background-color: #f2f2f2;
@@ -98,7 +98,7 @@ section {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   padding-left: 30px;
@@ -129,4 +129,3 @@ section {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   
 }
-
