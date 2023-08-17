@@ -8,7 +8,6 @@
 
 body {
   font-family: 'IBM Plex Mono', monospace;
-  /* margin: 1% 10%; */
   border-width: 1%;
   padding: 3%;
   background-color: #f2f2f2;
@@ -16,18 +15,17 @@ body {
 
 #Mee {
   display: flex;
-  align-items: center; /* Vertically center content */
+  align-items: center;
 }
 
 #profilePic {
-  width: 8vw; /* Set width relative to viewport width */
-  height: 8vw; /* Set height relative to viewport width */
+  width: 8vw;
+  height: 8vw;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   transition: transform 0.5s;
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: cover;
 }
-
 
 #profilePic:hover {
   transform: rotate(180deg);
@@ -98,7 +96,7 @@ section {
   padding: 5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-;
+  justify-content: space-between;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   padding-left: 30px;
@@ -124,6 +122,8 @@ section {
 .project-image {
   max-width: 100%;
 }
+
+
 
 #myName {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
