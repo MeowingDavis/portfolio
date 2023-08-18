@@ -10,6 +10,23 @@ body {
   font-family: 'IBM Plex Mono', monospace;
   padding: 3%;
   background-color: #f2f2f2;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+  #profilePic {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul li {
+    display: block;
+  }
 }
 
 #Mee {
@@ -73,20 +90,6 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-@media only screen and (max-width: 600px) {
-  #profilePic {
-    width: 100%;
-    height: auto;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  nav ul li {
-    display: block;
-  }
-}
 
 #driftPic {
   width: 100%;
