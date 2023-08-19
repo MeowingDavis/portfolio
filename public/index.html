@@ -7,13 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=IBM+Plex+Mono&family=Sono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-        }
-    </style>
+   
     <title>DAVIS LANG</title>
 </head>
 <body>
@@ -37,64 +31,61 @@
     </header>
 
     <section id="BIO">
-        <button class="removeButton" onclick="removeSection()">X</button>
+    
         <p>I'm a passionate multimedia designer with a keen interest in exploring the realm of interactivity, particularly at the crossroads of sound and interaction.
         I am fascinated by the way immersive auditory experiences come to life through creations such as games, animations, and web applications.</p>
     </section>
     
-    <script>
-    function removeSection() {
-      var section = document.getElementById("BIO");
-      section.parentNode.removeChild(section);
-    }
-    </script>
-    
+  
 
     <section id="ONE">
         <h2>Interactives</h2>
         <div class="projects">
             <div class="project">
-           <figure>
-    <img id="driftPic" src="./img/drift.png">
-    <figcaption>
-        <li><a href="">D R I F T</a></li>
-    </figcaption>
-</figure>
-
-
-            </div>
-            <div class="project">
-                  <figure>
-                    <img id="driftPic" src="./img/VrGal.png">
-                    <figcaption>
-                        <li><a href="">CV Virtual Gallery</a></li> Virtual gallery that I currated to celebrate the 20th CV release
-                    </figcaption>
-
-                </figure>
-            </div>
-            <div class="project">
                 <figure>
-                  <img id="driftPic" src="./img/MAZ.png">
+                  <img class="driftPic" src="./img/drift.png">
                   <figcaption>
-                      <li><a href="">ma'ze</a></li> Minimalist interaction made using unity, it explores ideas of 'ma' and wabi-sabi
+                    <li><a href="">D R I F T</a></li>
                   </figcaption>
-              </figure>
-          </div>
-        </div>
+                </figure>
+              </div>
+              <div class="project">
+                <figure>
+                  <img class="driftPic" src="./img/VrGal.png">
+                  <figcaption>
+                    <li><a href="">CV Virtual Gallery</a></li> Virtual gallery that I currated to celebrate the 20th CV release
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="project">
+                <figure>
+                  <img class="driftPic" src="./img/MAZ.png">
+                  <figcaption>
+                    <li><a href="">ma'ze</a></li> Minimalist interaction made using unity, it explores ideas of 'ma' and wabi-sabi
+                  </figcaption>
+                </figure>
+              </div>
+              
     </section>
+
 
     <section id="TWO">
         <h2>AudioVisual</h2>
         <div class="projects">
             <div class="project">
-                <iframe width="940" height="529" src="https://www.youtube.com/embed/_ga0Ju7DULk" title="flicker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/_ga0Ju7DULk" title="flicker" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="project">
-                <iframe width="940" height="529" src="https://www.youtube.com/embed/LK5s_-SeTD8" title="Hydra and a terrible synth patch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/LK5s_-SeTD8" title="Hydra and a terrible synth patch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
             </div>
             <div class="project">
-               <iframe width="940" height="529" src="https://www.youtube.com/embed/dse4K9IaDHU" title="Caffeinism" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe  src="https://www.youtube.com/embed/dse4K9IaDHU" title="Caffeinism" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
             </div>
+            <!-- Repeat the same pattern for other videos -->
         </div>
     </section>
 
@@ -103,7 +94,7 @@
         <div class="projects">
             <div class="project">
                 <figure>
-                    <img id="driftPic" src="./img/CVU013.png">
+                    <img class="driftPic" src="./img/CVU013.png">
                     <figcaption>
                       CVU013
                     </figcaption>
@@ -112,7 +103,7 @@
             </div>
             <div class="project">
                 <figure>
-                    <img id="driftPic" src="./img/CVU009_FINAL.png">
+                    <img class="driftPic" src="./img/CVU009_FINAL.png">
                     <figcaption>
                       CVU009
                     </figcaption>
@@ -121,7 +112,7 @@
             </div>
             <div class="project">
                 <figure>
-                    <img id="driftPic" src="./img/connorWall.png">
+                    <img class="driftPic" src="./img/connorWall.png">
                     <figcaption>
                       Connor Wall
                     </figcaption>
