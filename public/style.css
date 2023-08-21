@@ -107,6 +107,11 @@ figure {
   height: 100px;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  transition: transform 1s;
+}
+
+#profilePic:hover {
+  transform: rotate(180deg);
 }
 
 #BIO {
@@ -147,3 +152,32 @@ li a:hover {
 
 section {
   box-shadow: 0
+}
+/* Your existing CSS rules */
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+  /* Define other styles for dark mode */
+}
+
+/* Define dark mode styles for specific elements */
+.dark-mode h1 {
+  color: #72ce92;
+}
+
+.dark-mode nav {
+  background-color: #333;
+  color: aliceblue;
+}
+
+.dark-mode ul li a {
+  color: #fff;
+}
+
+.dark-mode nav ul li a:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* Define dark mode styles for other elements as needed */
