@@ -142,12 +142,12 @@ figcaption a {
 
 /* Define dark mode styles for specific elements */
 body.dark-mode {
-  background-color: #333;
-  color: #fff;
+  background-color: #333333bb;
+  color: #ff2d2dc5;
 }
 
 .dark-mode h1 {
-  color: #A3E4D7; /* Pastel green */
+  color: #ff1e0078; /* Pastel green */
 }
 
 .dark-mode nav {
@@ -156,7 +156,7 @@ body.dark-mode {
 }
 
 .dark-mode ul li a {
-  color: #fff;
+  color: #ff0000;
   text-decoration: none;
   padding: 10px;
 }
