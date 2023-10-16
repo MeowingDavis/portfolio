@@ -132,7 +132,6 @@ li {
 li a:hover {
   background: #333;
   color: #fff;
-  padding: 5px;
 }
 
 .video-container {
@@ -151,9 +150,8 @@ li a:hover {
 }
 
 section {
-  box-shadow: 0
+  box-shadow: 0;
 }
-/* Your existing CSS rules */
 
 body.dark-mode {
   background-color: #333;
@@ -173,11 +171,22 @@ body.dark-mode {
 
 .dark-mode ul li a {
   color: #fff;
+  text-decoration: none;
+  padding: 10px;
 }
 
-.dark-mode nav ul li a:hover {
-  background: #fff;
-  color: #333;
+.dark-mode ul li a:hover {
+  background: #f8333c;
+  color: #fff;
 }
 
-/* Define dark mode styles for other elements as needed */
+body.dark-mode figcaption a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+body.dark-mode figcaption a:hover {
+  background: #f8333c;
+  color: #fff;
+}
