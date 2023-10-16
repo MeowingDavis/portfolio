@@ -11,58 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
     <title>DAVIS LANG</title>
-    <script>
-        function toggleDarkMode() {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-        }
-
-        function createPulsingBackground() {
-            const canvas = document.getElementById("background-canvas");
-            const ctx = canvas.getContext("2d");
-
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-
-            // Function to update the background color
-            function updateBackgroundColor(time) {
-                const red = Math.sin(0.0005 * time + 3) * 63 + 192; // Slower red pulsing
-                const green = Math.sin(0.0005 * time + 2) * 63 + 192; // Slower green pulsing
-                const blue = Math.sin(0.000005 * time + 7) * 63 + 192; // Slower blue pulsing
-                const alpha = Math.sin(0.0005 * time + 3) * 63 + 192;
-
-                return `rgba(${red.toFixed(0)}, ${green.toFixed(0)}, ${blue.toFixed(0)}, ${alpha})`;
-            }
-
-            function drawBackground() {
-                const time = new Date().getTime();
-
-                const bgColor = updateBackgroundColor(time);
-
-                ctx.fillStyle = bgColor;
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-                requestAnimationFrame(drawBackground);
-            }
-
-            // Start the animation
-            drawBackground();
-        }
-
-        // Call the function when the page loads
-        window.addEventListener("load", createPulsingBackground);
-
-
-    </script>
-
-
-
-
-
 
 </head>
 
 <body>
+    <script src="script.js">
+    </script>
 
 
     <header>
@@ -82,6 +36,8 @@
 
     </header>
     <canvas id="background-canvas"></canvas>
+ 
+    
 
 
     <section id="BIO">
