@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Previous projects created by Davis Lang">
+    <meta name="keywords" content="design, games, naarm, melbourne, australia, sound, eurorack">
+    <meta name="author" content="Davis Lang">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>My Web Page</title>
+
+    <!-- External CSS files (if any) -->
+    <link rel="stylesheet" href="projectStyles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <canvas id="background-canvas"></canvas>
+    
+
+    <h2>Projects</h2>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Interactives</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">AudioVisual</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Photography</button>
+</div>
+
+<div id="London" class="tabcontent">
+
+</div>
+
+<div id="Paris" class="tabcontent">
+  
+</div>
+
+<div id="Tokyo" class="tabcontent">
+ 
+</div>
+    
+ 
+
+    <footer>
+        <p>&copy; 2023 Davis Lang</p>
+    </footer>
+    
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+           
+    <script src="projectscripts.js"></script>
+</body>
+</html>
