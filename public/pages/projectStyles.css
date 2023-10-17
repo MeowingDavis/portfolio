@@ -129,3 +129,13 @@ footer {
     }
     
 }
+
+iframe {
+        max-width: 973px;
+        max-height: 547px;
+    }
+    .resizable-iframe {
+        max-width: 973px;
+        max-height: 547px;
+    }
+    

@@ -1,8 +1,12 @@
 :root {
-  --colour-one: #A3E4D7; /* Pastel green */
-  --colour-two: #F88B9D; /* Pastel pink */
-  --colour-three: #FFD700; /* Pastel yellow */
-  --colour-four: #A5D8E1; /* Pastel blue */
+  --colour-one: #A3E4D7;
+  /* Pastel green */
+  --colour-two: #F88B9D;
+  /* Pastel pink */
+  --colour-three: #FFD700;
+  /* Pastel yellow */
+  --colour-four: #A5D8E1;
+  /* Pastel blue */
   --border-one: dashed 2px white;
 }
 
@@ -11,10 +15,11 @@ body {
   padding: 5%;
   background-color: #f2f2f2;
   overflow-x: hidden;
-  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add this line for text shadow */
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  /* Add this line for text shadow */
 
   color: #ffffffc0;
-  
+
 }
 
 #Mee {
@@ -26,9 +31,10 @@ body {
 nav {
 
   text-align: left;
-  position: relative; /* Add this */
+  position: relative;
+  /* Add this */
   user-select: none;
- 
+
 }
 
 nav ul {
@@ -45,7 +51,7 @@ nav ul li a {
   color: #e6e6e6;
   text-decoration: none;
   padding: 10px;
-  
+
 }
 
 nav ul li a:hover {
@@ -66,7 +72,7 @@ h2 {
 
 
 @media only screen and (max-width: 600px) {
- 
+
   nav ul li {
     display: block;
   }
@@ -122,10 +128,11 @@ li a:hover {
   top: 0;
   left: 0;
   z-index: -1;
-  
+
 }
+
 #Contact a[href^="mailto:"] {
-  user-select:text
+  user-select: text
 }
 
 #color-change-button {
