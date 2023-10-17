@@ -14,13 +14,9 @@
 </head>
 
 <body>
-  <button id="toggleButton">Toggle Scripts</button>
+    <!-- <script src="script.js" id="script1"></script> -->
+    <script src="waves.js" id="script2"></script>
 
-  <script src="script.js">
-    
-  </script>
-  <script src="waves.js">
-    </script>
 
   <header>
     <div id="Mee">
@@ -35,6 +31,7 @@
   </header>
 
   <canvas id="background-canvas"></canvas>
+  <button id="color-change-button">Change Color</button>
 
   <section id="BIO">
     <p><em>I'm a passionate multimedia designer with a keen interest in exploring the realm of interactivity, particularly at the crossroads of sound and interaction. I am fascinated by the way immersive auditory experiences come to life through creations such as games, animations, and web applications.</em></p>
@@ -52,40 +49,7 @@
     </nav>
   </section>
 
-  <script>
-    // Initially, both scripts are turned off
-    let isScript1On = false;
-    let isScript2On = false;
-    let script1, script2;
 
-    const toggleButton = document.getElementById('toggleButton');
-
-    toggleButton.addEventListener('click', function () {
-      if (isScript1On) {
-        // Turn off script 1
-        isScript1On = false;
-        script1.remove();
-      } else {
-        // Turn on script 1
-        isScript1On = true;
-        script1 = document.createElement('script');
-        script1.src = 'script.js';
-        document.body.appendChild(script1);
-      }
-
-      if (isScript2On) {
-        // Turn off script 2
-        isScript2On = false;
-        script2.remove();
-      } else {
-        // Turn on script 2
-        isScript2On = true;
-        script2 = document.createElement('script');
-        script2.src = 'waves.js';
-        document.body.appendChild(script2);
-      }
-    });
-  </script>
 </body>
 
 </html>

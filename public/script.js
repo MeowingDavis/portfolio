@@ -1,10 +1,3 @@
-
-// function toggleDarkMode() {
-//     const body = document.body;
-//     body.classList.toggle('dark-mode');
-// }
-
-
 function createGlitchyBackground() {
     const canvas = document.getElementById("background-canvas");
     const ctx = canvas.getContext("2d");
@@ -13,8 +6,8 @@ function createGlitchyBackground() {
     canvas.height = window.innerHeight;
   
     const backgroundColor = "black";
-    const pixelSize = 10; // Adjust the size of the pixels
-    const maxDisplacement = 5; // Maximum displacement for the glitch effect
+    const pixelSize = 1; // Adjust the size of the pixels
+    const maxDisplacement = 3 // Maximum displacement for the glitch effect
     const greyShades = ["#000", "#111", "#222", "#333", "#444"]; // Shades of grey
   
     ctx.fillStyle = backgroundColor;
