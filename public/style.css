@@ -11,7 +11,7 @@ body {
   padding: 5%;
   background-color: #f2f2f2;
   overflow-x: hidden;
-  overflow: hidden;
+
   color: #ffffffc0;
   
 }
@@ -26,6 +26,7 @@ nav {
 
   text-align: left;
   position: relative; /* Add this */
+  user-select: none;
  
 }
 
@@ -73,7 +74,6 @@ h2 {
     font-family: 'IBM Plex Mono', monospace;
     padding: 5%;
     background-color: #f2f2f2;
-    
     color: #ffffffc0;
 
   }
@@ -105,6 +105,7 @@ li {
   color: #ffffff;
   text-decoration: none;
   padding: 10px;
+  user-select: none;
 }
 
 li a:hover {
@@ -120,4 +121,7 @@ li a:hover {
   left: 0;
   z-index: -1;
   
+}
+#Contact a[href^="mailto:"] {
+  user-select:text
 }
