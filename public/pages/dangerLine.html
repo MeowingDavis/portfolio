@@ -74,6 +74,9 @@
             padding: 0;
 
         }
+        p {
+            text-align: center;
+        }
     </style>
 </head>
 <header>
@@ -86,14 +89,38 @@
 
 <body>
     <h4>DEMO</h4>
+    <div id="message" style="display: none;">
+        <p>This game is intended for larger screens.</p>
+    </div>
+    <div id="iframeContainer">
     <div class="center">
 
 
-        <iframe frameborder="0" src="https://itch.io/embed-upload/8910080?color=333333" allowfullscreen="" width="853"
+        <iframe id="iframe" frameborder="0" src="https://itch.io/embed-upload/8910080?color=333333" allowfullscreen="" width="853"
             height="524"><a href="https://meowingdavis.itch.io/dangerline">Play DangerLine on itch.io</a></iframe>
         </iframe>
-
     </div>
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            var messageElement = document.getElementById('message');
+            var iframeContainer = document.getElementById('iframeContainer');
+            var iframe = document.getElementById('iframe');
+
+            function showOrHideElements() {
+                if (window.innerWidth < 853) {
+                    messageElement.style.display = 'block';
+                    iframeContainer.style.display = 'none';
+                } else {
+                    messageElement.style.display = 'none';
+                    iframeContainer.style.display = 'block';
+                }
+            }
+
+            window.addEventListener('resize', showOrHideElements);
+            showOrHideElements(); // Initial check
+        });
+    </script>
 </body>
 
 </html>
