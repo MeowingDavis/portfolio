@@ -4,17 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML Page</title>
+    <title>DangerLine</title>
     <meta name="description" content="Previous projects created by Davis Lang">
     <meta name="keywords" content="design, games, naarm, melbourne, australia, sound, eurorack">
     <meta name="author" content="Davis Lang">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="script.js"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .center {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center iframe {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            padding: 5%;
+            background-color: #000000;
+            overflow-x: hidden;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            color: #ffffffc0;
+        }
+
+        nav {
+            text-align: left;
+            position: relative;
+            user-select: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            color: #e6e6e6;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li a:hover {
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Back</a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
- 
+    <div class="center">
+        <iframe frameborder="0" src="https://itch.io/embed-upload/8909818?color=333333" allowfullscreen=""
+            width="853.12" height="504.4">
+            <a href="https://meowingdavis.itch.io/dangerline">Play DangerLine on itch.io</a>
+        </iframe>
+
+    </div>
 </body>
 
 </html>

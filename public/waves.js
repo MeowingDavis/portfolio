@@ -13,8 +13,10 @@ function createRandomColorTentacleBackground() {
 
     const tentacleWidth = 100;
     const tentacleCount = 800;
-    const tentacleSpeed = 0.2;
-    const tentacleAmplitude = 100;
+    const tentacleSpeed = 0.5;
+    const tentacleAmplitude = 110;
+    const modulationFrequency = 0.01; // Adjust the modulation frequency to make it subtle
+
     const backgroundColor = "black";
 
     ctx.imageSmoothingEnabled = true;
@@ -32,7 +34,8 @@ function createRandomColorTentacleBackground() {
         for (let i = 0; i < tentacleCount; i++) {
             const xPos = (i / tentacleCount) * canvas.width;
             const yPos = canvas.height;
-            const yOffset = Math.sin((xPos / canvas.width) * Math.PI * 2 + (Date.now() * 0.001 * tentacleSpeed)) * tentacleAmplitude;
+            const yOffset = Math.sin((xPos / canvas.width) * Math.PI * 2 + (Date.now() * 0.001 * tentacleSpeed)) * tentacleAmplitude * Math.sin(Date.now() * 0.03 * modulationFrequency);
+            // Apply the sine wave modulation to the tentacleAmplitude
 
             ctx.fillRect(xPos, yPos, tentacleWidth, -yOffset);
         }
