@@ -12,7 +12,7 @@ body {
   background-color: #f2f2f2;
   overflow-x: hidden;
   overflow: hidden;
-  color: #fff;
+  color: #ffffffc0;
   
 }
 
@@ -40,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #787878;
+  color: #787878df;
   text-decoration: none;
   padding: 10px;
 }
