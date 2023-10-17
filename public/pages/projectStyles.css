@@ -107,3 +107,20 @@ footer {
     text-align: end;
     color: rgba(240, 248, 255, 0.295);
   }
+
+  @media only screen and (max-width: 600px) {
+ 
+    nav ul li {
+      display: block;
+    }
+  
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      padding: 5%;
+      background-color: #f2f2f2;
+      color: #ffffffc0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
+  
+    }
+  }
+  
