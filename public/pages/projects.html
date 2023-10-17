@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <!-- External CSS files (if any) -->
     <link rel="stylesheet" href="projectStyles.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,57 +24,64 @@
     </header>
 
     <canvas id="background-canvas"></canvas>
-    
+
 
     <h2>Projects</h2>
 
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Interactives</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">AudioVisual</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Photography</button>
-</div>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Interactives</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">AudioVisual</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Photography</button>
+    </div>
 
-<div id="London" class="tabcontent">
-
-    <nav>
-        <ul>
-            <li><a href="cli-click.deno.dev">click click click</a></li>
+    <div id="London" class="tabcontent">
+        <h3>JavaScript</h3>
+        <ul class="projectsList">
+            <li><a target="_blank" href="https://cli-click.deno.dev/">- click click click</a></li>
+            <li><a target="_blank" href="https://speed-type.deno.dev/">- How fast can you type</a></li>
+            <li><a target="_blank" href="https://eco-collective.deno.dev/">- click click click</a></li>
         </ul>
-    </nav>
+        <h3>Unity</h3>
 
-</div>
+    </div>
 
-<div id="Paris" class="tabcontent">
-  
-</div>
+    <div id="Paris" class="tabcontent">
 
-<div id="Tokyo" class="tabcontent">
- 
-</div>
-    
- 
+       
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      
+        <ul class="projectsList">
+            <li><a target="_blank" href="https://september.deno.dev/">september</a></li>
+        </ul>
+
+    </div>
+
+
 
     <footer>
         <p>&copy; 2023 Davis Lang</p>
     </footer>
-    
+
     <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        </script>
-           
+    </script>
+
     <script src="projectscripts.js"></script>
 </body>
+
 </html>

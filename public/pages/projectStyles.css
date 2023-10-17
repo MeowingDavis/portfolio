@@ -3,74 +3,52 @@ body {
     padding: 5%;
     background-color: #000000;
     overflow-x: hidden;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add this line for text shadow */
-  
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     color: #ffffffc0;
-    
-  }
+}
 
 nav {
-
     text-align: left;
-    position: relative; /* Add this */
+    position: relative;
     user-select: none;
-   
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline-block;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #e6e6e6;
     text-decoration: none;
     padding: 10px;
-    
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background: #333;
     color: #fff;
-  }
-  
+}
 
-  @media only screen and (max-width: 600px) {
- 
-    nav ul li {
-      display: block;
-    }
-  
-    body {
-      font-family: 'IBM Plex Mono', monospace;
-      padding: 5%;
-      background-color: #000000;
-      color: #ffffffc0;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
-  
-    }
-  }
-  
-  #background-canvas {
+#background-canvas {
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
-  }
+}
 
-  /* Style the tab */
+/* Style the tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     color: honeydew;
-    background-color: none;
-  }
-  
+    /* Remove the unused background-color property */
+}
+
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
@@ -81,7 +59,7 @@ nav {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    color: #ffffff; /* Set the initial text color to white */
+    color: #ffffff;
 }
 
 /* Change background color of buttons on hover */
@@ -91,8 +69,8 @@ nav {
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #696969;
-    color: #ffffff; /* Set the active button text color to white */
+    background-color: #333;
+    color: #ffffff;
 }
 
 /* Style the tab content */
@@ -106,21 +84,48 @@ nav {
 footer {
     text-align: end;
     color: rgba(240, 248, 255, 0.295);
-  }
+}
 
-  @media only screen and (max-width: 600px) {
- 
+.projectsList {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    
+}
+
+.projectsList li {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.projectsList li a {
+    color: white;
+   
+    text-decoration: none;
+    text-decoration: underline;
+    transition: color 0.3s;
+    padding: 2px;
+}
+
+.projectsList li a:hover {
+    color: lightgray;
+    background-color: #333;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+   
     nav ul li {
-      display: block;
+        display: block;
     }
-  
     body {
-      font-family: 'IBM Plex Mono', monospace;
-      padding: 5%;
-      background-color: #f2f2f2;
-      color: #ffffffc0;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
-  
+        font-family: 'IBM Plex Mono', monospace;
+        padding: 5%;
+        background-color: #f2f2f2;
+        color: #ffffffc0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
     }
-  }
-  
+    
+}

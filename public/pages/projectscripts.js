@@ -50,5 +50,6 @@ function updateNoise(timestamp) {
     requestAnimationFrame(updateNoise);
 }
 
+
 // Start the animation
 updateNoise(0);
