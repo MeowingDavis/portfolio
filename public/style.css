@@ -11,6 +11,7 @@ body {
   padding: 5%;
   background-color: #f2f2f2;
   overflow-x: hidden;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Add this line for text shadow */
 
   color: #ffffffc0;
   
@@ -44,7 +45,7 @@ nav ul li a {
   color: #e6e6e6;
   text-decoration: none;
   padding: 10px;
-  text-shadow: #000000;
+  
 }
 
 nav ul li a:hover {
@@ -75,6 +76,7 @@ h2 {
     padding: 5%;
     background-color: #f2f2f2;
     color: #ffffffc0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
 
   }
 }
@@ -125,3 +127,8 @@ li a:hover {
 #Contact a[href^="mailto:"] {
   user-select:text
 }
+
+#color-change-button {
+  cursor: pointer;
+}
+
