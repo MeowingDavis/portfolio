@@ -15,6 +15,7 @@ body {
   padding: 5%;
   background-color: #333;
   overflow-x: hidden;
+
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   /* Add this line for text shadow */
 
@@ -26,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   margin: 10px;
+  user-select: none;
 }
 
 nav {
