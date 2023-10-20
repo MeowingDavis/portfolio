@@ -62,3 +62,5 @@ window.addEventListener("load", createRandomColorTentacleBackground);
 
 // Add a window resize event listener to update canvas size
 window.addEventListener("resize", createRandomColorTentacleBackground);
+
+

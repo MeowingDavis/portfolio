@@ -32,7 +32,8 @@
                 <li><a id="color-change-button" title="Click to change colour of the background." target="_blank"
                         rel="noopener noreferrer">/0.o\</a></li>
                 <li><a href="pages/projects.html" title="Previous Projects" rel="noopener noreferrer">Projects</a></li>
-                <li><a href="https://davislang-blog.deno.dev/" title="A diary for my digital journey." target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="https://davislang-blog.deno.dev/" title="A diary for my digital journey." target="_blank"
+                        rel="noopener noreferrer">Blog</a></li>
 
             </ul>
         </nav>
@@ -42,20 +43,29 @@
     <canvas id="background-canvas"></canvas>
     <!-- <button id="color-change-button">Change Color</button> -->
 
+
     <section id="BIO">
-        <p><em>I'm a passionate multimedia designer from Melbourne, Australia with a keen interest in exploring the realm of interactivity,
-                particularly at the crossroads of sound and interaction. <br> I am fascinated by the way immersive auditory
-                experiences come to life through creations such as games, animations, and web applications.</em></p>
+        <p> <em>
+                I'm a passionate <em class="yellow"> multimedia </em>designer from <em class="yellow">Melbourne</em>,
+                Australia with a keen interest in exploring the realm of interactivity,
+                particularly at the crossroads of <em class="yellow"> sound and interaction.</em> <br> I am fascinated
+                by the way immersive auditory
+                experiences come to life through creations such as games, animations, and web applications.
+            </em></p>
     </section>
+
 
     <section id="Contact">
         <h2>Contact Me</h2>
         <nav id="navBar2">
             <ul>
-                <li><a title="Send me an email!"  href="mailto:davislang808@gmail.com">davislang808@gmail.com</a></li>
-                <li><a href="https://www.instagram.com/no.davis/">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/in/your-linkedin-profile/">LinkedIn</a></li>
-                <li><a title="All the code for all my projects is avalable here." href="https://github.com/MeowingDavis">GitHub</a></li>
+                <li><a title="Send me an email!" style="color: #ffffffc1"
+                        href="mailto:davislang808@gmail.com">davislang808@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/no.davis/" style="color: #e1306ba7">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/your-linkedin-profile/" style="color: #0066999c">LinkedIn</a>
+                </li>
+                <li><a title="All the code for all my projects is avalable here." href="https://github.com/MeowingDavis"
+                        style="color: #2fbb5087">GitHub</a></li>
             </ul>
         </nav>
     </section>
@@ -63,6 +73,26 @@
     <footer>
         <p>&copy; 2023 Davis Lang</p>
     </footer>
+
+    <script> //colour dancing
+        // Get the button element by its ID
+        const colorChangeButton = document.getElementById("color-change-button");
+
+        // Store the original text and the new text
+        const originalText = "/0.o\\";
+        const newText = "\\o.0/";
+
+        // Add a "mouseenter" event listener to change the text when hovering
+        colorChangeButton.addEventListener("mouseenter", () => {
+            colorChangeButton.textContent = newText;
+        });
+
+        // Add a "mouseleave" event listener to revert the text when the mouse leaves
+        colorChangeButton.addEventListener("mouseleave", () => {
+            colorChangeButton.textContent = originalText;
+        });
+
+    </script>
 
 
 

@@ -149,3 +149,9 @@ footer {
 p {
   user-select: none;
 }
+
+#BIO em.yellow {
+  color: rgba(255, 255, 0, 0.608);
+}
+
+
