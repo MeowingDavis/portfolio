@@ -22,12 +22,12 @@ function createRandomColorTentacleBackground() {
     ctx.imageSmoothingEnabled = true;
   
     const colors = [
-      "#A7A5C6", // Red
-      "#00FF00", // Green
-      "#0000FF", // Blue
-      "#FFFF00", // Yellow
-      "#FF00FF", // Purple
-      "#00FFFF" // Cyan
+      "#6C464F",
+      "#9E768F", 
+      "#9FA4C4", 
+      "#B3CDD1", 
+      "#C7F0BD", 
+      "#FFE548" 
     ];
   
     let currentColorIndex = 0;
