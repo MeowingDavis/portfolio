@@ -78,18 +78,7 @@ h2 {
   }
 }
 
-.driftPic {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.5s;
-  object-fit: cover;
-  max-width: 100%;
-}
 
-#profilePic:hover {
-  transform: rotate(180deg);
-}
 
 #BIO {
   max-width: 600px;
