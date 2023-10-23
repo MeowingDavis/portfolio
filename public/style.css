@@ -15,12 +15,8 @@ body {
   padding: 5%;
   background-color: #333;
   overflow-x: hidden;
-
-  text-shadow: 2px 2px 4px rgb(0, 0, 0);
-  /* Add this line for text shadow */
-
+  text-shadow: 2px 2px 4px rgb(30, 24, 56, 0.4);
   color: #ffffffc0;
-
 }
 
 #Mee {
@@ -31,12 +27,9 @@ body {
 }
 
 nav {
-
   text-align: left;
   position: relative;
-  /* Add this */
   user-select: none;
-
 }
 
 nav ul {
@@ -53,7 +46,6 @@ nav ul li a {
   color: #e6e6e6;
   text-decoration: none;
   padding: 10px;
-
 }
 
 nav ul li a:hover {
@@ -72,20 +64,17 @@ h2 {
   padding-left: 40px;
 }
 
-
 @media only screen and (max-width: 600px) {
-
   nav ul li {
     display: block;
   }
-
+  
   body {
     font-family: 'IBM Plex Mono', monospace;
     padding: 5%;
     background-color: #333;
     color: #ffffffc0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
-
   }
 }
 
@@ -97,7 +86,6 @@ h2 {
   object-fit: cover;
   max-width: 100%;
 }
-
 
 #profilePic:hover {
   transform: rotate(180deg);
@@ -124,17 +112,15 @@ li a:hover {
   z-index: 1;
 }
 
-
 #background-canvas {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-
 }
 
 #Contact a[href^="mailto:"] {
-  user-select: text
+  user-select: text;
 }
 
 #color-change-button {
@@ -153,5 +139,3 @@ p {
 #BIO em.yellow {
   color: rgba(255, 255, 0, 0.608);
 }
-
-
