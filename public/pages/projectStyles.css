@@ -45,14 +45,13 @@ nav ul li a:hover {
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     color: honeydew;
-    /* Remove the unused background-color property */
+    background: #3333336f;
 }
 
-/* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
+    background-color: #33333300; /* Set the default background color to match tabcontent */
     float: left;
     border: none;
     outline: none;
@@ -63,23 +62,23 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #696969;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
-    background-color: #333;
+    background-color: #484848;
     color: #ffffff;
 }
 
-/* Style the tab content */
+/* Tab Content Styles */
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-top: none;
+    border-radius: 0 0 10px 10px;
+    background: #3333336f;
 }
 
 footer {
