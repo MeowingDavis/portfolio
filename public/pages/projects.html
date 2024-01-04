@@ -31,25 +31,35 @@
 
     <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'Interactives')">Interactives</button>
+        <button class="tablinks" onclick="openCity(event, 'Video')">Video</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">AudioVisual</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Photography</button>
+
     </div>
 
     <div id="Interactives" class="tabcontent">
         <h3>JavaScript</h3>
         <ul class="projectsList">
-            <li><h5>Micro Games</h5></li>
+            <li>
+                <h5>Micro Games</h5>
+            </li>
             <li><a target="_self" title="Micro Game" href="https://cli-click.deno.dev/">- click click click</a></li>
-            <li><a target="_self" title="Micro Game" href="https://speed-type.deno.dev/">- How fast can you type</a></li>
-            
-            <li><h5>Website ideas</h5></li>
-            <li><a target="_blank" title="Website idea" href="https://eco-collective.deno.dev/Ecocollective/index.html">- EcoCollective)</a></li>
-            <li><h5>Net art</h5></li>
+            <li><a target="_self" title="Micro Game" href="https://speed-type.deno.dev/">- How fast can you type</a>
+            </li>
+
+            <li>
+                <h5>Website ideas</h5>
+            </li>
+            <li><a target="_blank" title="Website idea"
+                    href="https://eco-collective.deno.dev/Ecocollective/index.html">- EcoCollective)</a></li>
+            <li>
+                <h5>Net art</h5>
+            </li>
             <li><a target="_blank" title="Net art" href="https://davis-netart.deno.dev/">- Drift</a></li>
         </ul>
         <h3>Unity</h3>
         <ul class="projectsList">
-        <li><a title="Video Game" href="dangerLine.html" >- DangerLine</a></li>
+            <li><a title="Video Game" href="dangerLine.html">- DangerLine</a></li>
         </ul>
     </div>
 
@@ -58,34 +68,48 @@
         <h3>Sound Design</h3>
 
         <ul class="projectsList">
-           
-            <li><a target="_blank" title="Music and Sound Design project for an animation By Yanwen Wang" href="https://www.youtube.com/embed/dse4K9IaDHU">- Caffeinism</a></li>
-            <li><a target="_blank" title="Music and Sound Design project for an animation By Yanwen Wang" href="https://youtu.be/wc1uJaDuJ0A"> - Untitled</a></li>
+
+            <li><a target="_blank" title="Music and Sound Design project for an animation By Yanwen Wang"
+                    href="https://www.youtube.com/embed/dse4K9IaDHU">- Caffeinism</a></li>
+            <li><a target="_blank" title="Music and Sound Design project for an animation By Yanwen Wang"
+                    href="https://youtu.be/wc1uJaDuJ0A"> - Untitled</a></li>
         </ul>
         <h3>Audio Reactive</h3>
         <ul class="projectsList">
-            <li><a target="_blank" title="Audio Reactive visuals created using QuadBike...All sound has been redubbed" href="https://www.youtube.com/embed/_ga0Ju7DULk">- Flicker</a></li>
-          
+            <li><a target="_blank" title="Audio Reactive visuals created using QuadBike...All sound has been redubbed"
+                    href="https://www.youtube.com/embed/_ga0Ju7DULk">- Flicker</a></li>
+
         </ul>
 
-        <!-- <iframe class="resizable-iframe" src="https://www.youtube.com/embed/_ga0Ju7DULk" title="flicker" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
 
-        <iframe class="resizable-iframe" src="https://www.youtube.com/embed/dse4K9IaDHU" title="Caffeinism"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe> -->
 
     </div>
 
     <div id="Tokyo" class="tabcontent">
         <h3>Albums</h3>
         <ul class="projectsList">
-            <li><a target="_blank" title="Photography project shot throughout the month of september 2023" href="https://september.deno.dev/">- September</a></li>
+            <li><a target="_blank" title="Photography project shot throughout the month of september 2023"
+                    href="https://september.deno.dev/">- September</a></li>
         </ul>
-        
 
+
+    </div>
+    <div id="Video" class="tabcontent">
+        <h3>Video Projects</h3>
+        <ul class="projectsList">
+            <li>
+                <h5>Promo Videos</h5>
+            </li>
+            <li><a target="_blank"
+                    title="AI generated animation using logo assets for Melbourne based music label 'Circuit Breaker' "
+                    href="https://youtube.com/shorts/RSzXIohJtS4">-
+                    Circuit Breaker: 1</a></li>
+            <li><a target="_blank"
+                    title="AI generated animation using logo assets for Melbourne based music label 'Circuit Breaker' "
+                    href="https://www.youtube.com/shorts/No_4ZyuDUyc?feature=share">-
+                    Circuit Breaker: 2</a></li>
+            <!-- Add more video project links as needed -->
+        </ul>
     </div>
 
 
@@ -108,14 +132,14 @@
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " active";
         }
-    
+
         // Simulate a click on the "Interactives" button when the page loads
         window.onload = function () {
             var interactivesButton = document.querySelector(".tablinks");
             interactivesButton.click();
         };
     </script>
-    
+
 
     <script src="projectscripts.js"></script>
 </body>

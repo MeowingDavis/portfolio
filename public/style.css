@@ -13,7 +13,7 @@
 body {
   font-family: 'IBM Plex Mono', monospace;
   padding: 5%;
-  background-color: #333;
+  /* background-color: #333; */
   overflow-x: hidden;
   text-shadow: 2px 2px 4px rgb(30, 24, 56, 0.4);
   color: #ffffffc0;
@@ -24,6 +24,10 @@ body {
   align-items: center;
   margin: 10px;
   user-select: none;
+}
+
+#Highlight {
+  display: flex;
 }
 
 nav {

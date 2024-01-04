@@ -17,7 +17,7 @@ function createRandomColorTentacleBackground() {
     const tentacleAmplitude = 110;
     const modulationFrequency = 0.01; // Adjust the modulation frequency to make it subtle
   
-    const backgroundColor = "#2B2A33";
+    const backgroundColor = "#202124";
   
     ctx.imageSmoothingEnabled = true;
   
